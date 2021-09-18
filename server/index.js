@@ -15,6 +15,10 @@ app.use(cors());
 
 app.use('/posts', postRoutes);
 
+app.get('/', (req, res) => {
+    res.send("hi API")
+})
+
 // const CONNECTION_URL = 'mongodb+srv://js_mastery:123123123@practice.jto9p.mongodb.net/test';
 // const CONNECTION_URL = 'mongodb+srv://FullStack:FullStack@cluster0.sxf7i.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 
